@@ -1,4 +1,9 @@
-FROM Sibu07/hk-updated:latest
+FROM sibu07/hk-updated:main
+
 WORKDIR /usr/src/app
+RUN chmod 777 /usr/src/app
+
 COPY . .
+RUN pip3 install --no-cache-dir -r requirements.txt
+
 CMD ["bash", "start.sh"]

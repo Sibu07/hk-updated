@@ -1,0 +1,30 @@
+name: Deploy to Heroku
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: "89adb279-305b-4efd-9419-6112b87b5ec4"
+          heroku_app_name: "newbottt"
+          heroku_email: "herono1692@outlook.com"
+          usedocker: true
+          docker_heroku_process_type: web
+          stack: "container"
+          region: "eu"
+        env:
+          HD_OWNER_ID: "5301275567"
+          HD_TELEGRAM_API: "7565664"
+          HD_TELEGRAM_HASH: "a7a22b0f30b45dc64973ad11461325dc"
+          HD_DATABASE_URL: "mongodb+srv://a1:a1@multi.qeowc76.mongodb.net/?retryWrites=true&w=majority"
+          HD_BOT_TOKEN: "6327771564:AAGMC3pfhHc64tBQsO2G6e-I3VCSNJFEbzM"
+          HD_SUDO_USERS: "1881720028"
+          HD_UPSTREAM_BRANCH: "alpha"
+          HD_UPSTREAM_REPO: "https://github.com/5hojib/Aeon"
+          HD_BASE_URL: "https://newbottt-45ae6a7f8025.herokuapp.com/"
+          HD_SEARCH_API_LINK: "https://torrent-api-py-nx0x.onrender.com"
+          

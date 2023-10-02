@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12
+      - uses: akhileshns/heroku-deploy@v3.12.14
         with:
           heroku_api_key: "28abf86a-7e4e-4dc1-a169-43631f3f6013"
           heroku_app_name: "drkeddo"

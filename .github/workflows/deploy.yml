@@ -9,9 +9,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: "89adb279-305b-4efd-9419-6112b87b5ec4"
-          heroku_app_name: "newbottt"
-          heroku_email: "herono1692@outlook.com"
+          heroku_api_key: "28abf86a-7e4e-4dc1-a169-43631f3f6013"
+          heroku_app_name: "drkeddo"
+          heroku_email: "arctixmyboy@proton.me"
           usedocker: true
           docker_heroku_process_type: web
           stack: "container"
@@ -23,8 +23,8 @@ jobs:
           HD_DATABASE_URL: "mongodb+srv://a1:a1@multi.qeowc76.mongodb.net/?retryWrites=true&w=majority"
           HD_BOT_TOKEN: "6327771564:AAGMC3pfhHc64tBQsO2G6e-I3VCSNJFEbzM"
           HD_SUDO_USERS: "1881720028"
-          HD_UPSTREAM_BRANCH: "alpha"
-          HD_UPSTREAM_REPO: "https://github.com/5hojib/Aeon"
-          HD_BASE_URL: "https://newbottt-45ae6a7f8025.herokuapp.com/"
+          HD_UPSTREAM_BRANCH: "main"
+          HD_UPSTREAM_REPO: "https://github.com/Sibu07/hk-updated"
+          HD_BASE_URL: "https://drkeddo-5990e3275277.herokuapp.com/"
           HD_SEARCH_API_LINK: "https://torrent-api-py-nx0x.onrender.com"
           

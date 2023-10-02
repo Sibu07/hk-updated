@@ -1,4 +1,4 @@
-FROM Sibu07/hk-updated:main
+FROM sibu07/hk-updated:main
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
